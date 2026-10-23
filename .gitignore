@@ -1,0 +1,5 @@
+/.env
+/storage/logs/*
+/storage/cache/*
+/public_html/uploads/products/*
+!/public_html/uploads/products/.htaccess

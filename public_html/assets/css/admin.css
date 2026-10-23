@@ -1,0 +1,257 @@
+/* ========================================================================== */
+/* DogoFlow 3.0 — Administration Theme                                      */
+/* This stylesheet is intentionally loaded after app.css so legacy admin     */
+/* styles cannot force the workspace back to the old dark-purple interface.  */
+/* ========================================================================== */
+
+:root {
+    --admin-bg: #F4F7FB;
+    --admin-surface: #FFFFFF;
+    --admin-surface-soft: #F8FAFC;
+    --admin-line: #E2E8F0;
+    --admin-text: #172033;
+    --admin-heading: #0B2545;
+    --admin-muted: #64748B;
+    --admin-blue: #00A3FF;
+    --admin-blue-deep: #0088EE;
+    --admin-navy: #071A33;
+}
+
+html,
+body.admin-shell {
+    min-height: 100%;
+    background: var(--admin-bg) !important;
+    color: var(--admin-text) !important;
+}
+
+body.admin-shell {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body.admin-shell .admin-main {
+    min-height: 100vh !important;
+    margin-left: 248px;
+    padding: 0 !important;
+    background: var(--admin-bg) !important;
+    color: var(--admin-text) !important;
+}
+
+body.admin-shell .admin-sidebar {
+    width: 248px !important;
+    background: linear-gradient(180deg, #071A33 0%, #0A2B4E 58%, #0B3A66 100%) !important;
+    color: #FFFFFF !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 8px 0 28px rgba(7, 26, 51, 0.10) !important;
+}
+
+body.admin-shell .admin-topbar {
+    height: 76px !important;
+    margin: 0 !important;
+    padding: 0 32px !important;
+    background: rgba(255, 255, 255, 0.97) !important;
+    color: var(--admin-heading) !important;
+    border-bottom: 1px solid var(--admin-line) !important;
+    box-shadow: 0 2px 14px rgba(7, 26, 51, 0.045) !important;
+}
+
+body.admin-shell .admin-content {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px 32px 54px !important;
+    background: transparent !important;
+}
+
+body.admin-shell .admin-top-title,
+body.admin-shell .page-heading h1,
+body.admin-shell .panel-head-df h2,
+body.admin-shell .stat-value-df {
+    color: var(--admin-heading) !important;
+}
+
+body.admin-shell .admin-top-subtitle,
+body.admin-shell .page-heading p,
+body.admin-shell .stat-label-df {
+    color: var(--admin-muted) !important;
+}
+
+body.admin-shell .page-heading {
+    margin-bottom: 24px;
+}
+
+body.admin-shell .page-heading h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+body.admin-shell .page-heading p {
+    font-size: 0.88rem;
+}
+
+body.admin-shell .stats-grid-df {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+body.admin-shell .stat-card-df,
+body.admin-shell .panel-df,
+body.admin-shell .form-card-df {
+    background: var(--admin-surface) !important;
+    color: var(--admin-text) !important;
+    border: 1px solid var(--admin-line) !important;
+    box-shadow: 0 7px 24px rgba(7, 26, 51, 0.055) !important;
+}
+
+body.admin-shell .stat-card-df {
+    border-radius: 16px;
+}
+
+body.admin-shell .stat-icon-df {
+    background: #E8F6FF !important;
+}
+
+body.admin-shell .panel-df {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+body.admin-shell .panel-head-df {
+    background: #FFFFFF !important;
+    border-bottom: 1px solid #E8EEF5 !important;
+}
+
+body.admin-shell .panel-head-df a {
+    color: var(--admin-blue-deep) !important;
+}
+
+body.admin-shell .table-df {
+    background: #FFFFFF !important;
+}
+
+body.admin-shell .table-df th {
+    background: #F6F9FC !important;
+    color: #587087 !important;
+    border-bottom: 1px solid #E0E8F0 !important;
+}
+
+body.admin-shell .table-df td {
+    background: #FFFFFF !important;
+    color: #334155 !important;
+    border-bottom: 1px solid #EEF2F6 !important;
+}
+
+body.admin-shell .table-df tbody tr:hover td {
+    background: #F8FBFF !important;
+}
+
+body.admin-shell .toolbar-df {
+    margin-bottom: 18px;
+}
+
+body.admin-shell .search-df {
+    background: #FFFFFF !important;
+    border: 1px solid var(--admin-line) !important;
+    color: var(--admin-muted) !important;
+    box-shadow: 0 3px 12px rgba(7, 26, 51, 0.035) !important;
+}
+
+body.admin-shell .search-df input {
+    color: var(--admin-text) !important;
+    background: transparent !important;
+}
+
+body.admin-shell .btn-df.primary {
+    background: linear-gradient(135deg, var(--admin-blue), var(--admin-blue-deep)) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 8px 20px rgba(0, 163, 255, 0.22) !important;
+}
+
+body.admin-shell .btn-df.secondary {
+    background: #FFFFFF !important;
+    color: #24506F !important;
+    border: 1px solid var(--admin-line) !important;
+}
+
+body.admin-shell .admin-icon-btn,
+body.admin-shell .admin-menu-btn {
+    background: #FFFFFF !important;
+    color: #24506F !important;
+    border: 1px solid var(--admin-line) !important;
+}
+
+body.admin-shell .admin-icon-btn:hover,
+body.admin-shell .admin-menu-btn:hover {
+    background: #F0F9FF !important;
+    color: var(--admin-blue-deep) !important;
+    border-color: #9EDBFA !important;
+}
+
+body.admin-shell .empty-df {
+    color: #7B8CA0 !important;
+}
+
+@media (max-width: 1100px) {
+    body.admin-shell .admin-sidebar {
+        width: 235px !important;
+    }
+
+    body.admin-shell .admin-main {
+        margin-left: 235px;
+    }
+
+    body.admin-shell .stats-grid-df {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body.admin-shell .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 820px) {
+    body.admin-shell .admin-sidebar {
+        width: min(285px, 88vw) !important;
+        transform: translateX(-105%);
+        transition: transform 0.25s ease;
+    }
+
+    body.admin-shell .admin-sidebar.open {
+        transform: translateX(0);
+    }
+
+    body.admin-shell .admin-main {
+        margin-left: 0;
+    }
+
+    body.admin-shell .admin-topbar {
+        padding: 0 17px !important;
+    }
+
+    body.admin-shell .admin-content {
+        padding: 22px 16px 42px !important;
+    }
+
+    body.admin-shell .page-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    body.admin-shell .stats-grid-df {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    body.admin-shell .admin-content {
+        padding: 18px 12px 36px !important;
+    }
+
+    body.admin-shell .stat-card-df {
+        padding: 15px;
+    }
+}

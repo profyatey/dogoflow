@@ -1,0 +1,10 @@
+{
+  "name": "dogoflow-css",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i tailwind-input.css -o ../public_html/assets/css/dogoflow.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

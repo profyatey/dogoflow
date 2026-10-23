@@ -1,0 +1,28 @@
+Options -Indexes
+DirectoryIndex index.php
+
+# Block access to common sensitive files if they are ever copied into the web root.
+<FilesMatch "^(\.env|.*\.(sql|log|ini|bak|old|dist))$">
+    Require all denied
+</FilesMatch>
+
+# Allow extensionless URLs while keeping existing files/directories working.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.+?)/?$ $1.php [L,QSA]
+</IfModule>
+
+# Uploaded product images must never execute as PHP.
+
+
+# Basic browser hardening. These headers are safe for the marketplace and do not
+# interfere with Paystack callbacks or normal form submissions.
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>

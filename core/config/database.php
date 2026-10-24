@@ -13,9 +13,9 @@ function db(): PDO
         return $pdo;
     }
 
-    $host = getenv('DOGOFLOW_DB_HOST') ?: '127.0.0.1';
-    $name = getenv('DOGOFLOW_DB_NAME') ?: (APP_ENV === 'production' ? '' : 'dogo');
-    $user = getenv('DOGOFLOW_DB_USER') ?: (APP_ENV === 'production' ? '' : 'root');
+    $host = getenv('DOGOFLOW_DB_HOST') ?: 'hostname';
+    $name = getenv('DOGOFLOW_DB_NAME') ?: (APP_ENV === 'production' ? '' : 'DB_NAAME');
+    $user = getenv('DOGOFLOW_DB_USER') ?: (APP_ENV === 'production' ? '' : 'DB_USERNAME');
     $passEnv = getenv('DOGOFLOW_DB_PASS');
     $pass = $passEnv === false ? '' : $passEnv;
 

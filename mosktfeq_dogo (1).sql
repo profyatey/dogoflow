@@ -41,11 +41,7 @@ CREATE TABLE `affiliate_clicks` (
 --
 
 INSERT INTO `affiliate_clicks` (`id`, `affiliate_id`, `product_id`, `ip_hash`, `user_agent`, `created_at`) VALUES
-(1, 1, NULL, 'f3e456b81d9fa4b56b8fed958b645991f30b14e8c4eebd04040cf498bb1a0e30', 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36', '2026-10-07 10:03:38'),
-(2, 1, NULL, 'aa76e2b9e33a2f308e7aff366b96c586721b18714894fcd740cf002a30b52b4c', 'WhatsApp/2.23.20.0', '2026-10-08 09:21:23'),
-(3, 1, NULL, '568e2b428b93d1d1f5222f55e342aad9a329f6f4efd56cd9d525d5b6a81a44fe', 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36', '2026-10-08 09:21:41'),
-(4, 1, NULL, '568e2b428b93d1d1f5222f55e342aad9a329f6f4efd56cd9d525d5b6a81a44fe', 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Mobile Safari/537.36', '2026-10-08 09:28:54'),
-(5, 1, NULL, 'c77a57c06eb783396d9090f3998dbd58ee8a12c2f2e0fe66f2af839e4571a072', 'WhatsApp/2.23.20.0', '2026-10-12 18:48:44');
+
 
 -- --------------------------------------------------------
 
@@ -224,13 +220,7 @@ CREATE TABLE `email_verifications` (
 --
 
 INSERT INTO `email_verifications` (`id`, `user_id`, `token_hash`, `expires_at`, `verified_at`, `created_at`) VALUES
-(2, 3, 'b64f95e067f98a1f69704897b317f69cc217aadfe3d1c83759fad561ed2d67e6', '2026-09-30 12:02:28', '2026-09-29 12:02:33', '2026-09-29 12:02:28'),
-(10, 11, '945ceec8203139ea7db9f4abad8a9aa7a43085545bd636c0dce0d669d6c0443c', '2026-10-14 13:34:31', '2026-10-13 13:35:06', '2026-10-13 13:34:31'),
-(11, 12, 'e4c88d9ddd360b3bcc75d8b0178559196e6f6874367156f44c9b582fa3bea746', '2026-10-14 13:42:40', '2026-10-13 13:43:18', '2026-10-13 13:42:40'),
-(12, 13, '0beaac238f83f19817e8525b2ce284376bc52175e3401dbab855327cdc01826c', '2026-10-14 22:20:00', '2026-10-13 22:22:17', '2026-10-13 22:20:00'),
-(13, 14, 'bb14a2441bd27e217e40ac702fd4a399c0f8cc3fdec712484b704d6ac48d22d4', '2026-10-14 22:57:31', '2026-10-13 22:58:09', '2026-10-13 22:57:31'),
-(14, 15, '0ebd9c0714bf70f05f1a81162598968b9632d14783d20a21d99b69932e0b13f9', '2026-10-15 04:31:04', '2026-10-14 05:31:22', '2026-10-14 04:31:04'),
-(16, 17, '14a70b631ab596228b0c08f2495f25a4acaf588ea554b84338193815d5014023', '2026-10-16 18:33:09', '2026-10-15 18:34:14', '2026-10-15 18:33:09');
+
 
 -- --------------------------------------------------------
 
@@ -270,12 +260,6 @@ CREATE TABLE `notifications` (
 --
 
 INSERT INTO `notifications` (`id`, `user_id`, `channel`, `subject`, `message`, `status`, `attempts`, `created_at`, `sent_at`, `read_at`) VALUES
-(24, 11, 'email', 'Verify your DogoFlow account', 'Hello Simon Abayeteye,\n\nPlease verify your DogoFlow account using this link:\nhttps://www.dogoflow.com/auth/verify.php?token=8121781a2a44a2cf6f63abd5fd52132093f3f0ba8435663550478effe74908e2\n\nThis verification link expires in 24 hours.\n\nDogoFlow', 'sent', 1, '2026-10-13 13:34:31', '2026-10-13 13:34:31', NULL),
-(26, 12, 'email', 'Verify your DogoFlow account', 'Hello Prof Simon,\n\nPlease verify your DogoFlow account using this link:\nhttps://www.dogoflow.com/auth/verify.php?token=812c089af522cf8c0e163d869c0ba24f3476d84614f1cc5f7d9513c1e9384ef3\n\nThis verification link expires in 24 hours.\n\nDogoFlow', 'sent', 1, '2026-10-13 13:42:40', '2026-10-13 13:42:40', NULL),
-(28, 13, 'email', 'Verify your DogoFlow account', 'Hello Gideon Adjei,\n\nPlease verify your DogoFlow account using this link:\nhttps://www.dogoflow.com/auth/verify.php?token=68d2986da631ddeb9210ad8b37f2e6f716540944d276826f1e5eeb6d71ef475e\n\nThis verification link expires in 24 hours.\n\nDogoFlow', 'sent', 1, '2026-10-13 22:20:00', '2026-10-13 22:20:00', NULL),
-(30, 14, 'email', 'Verify your DogoFlow account', 'Hello Felix  Konadu,\n\nPlease verify your DogoFlow account using this link:\nhttps://www.dogoflow.com/auth/verify.php?token=5238c1226c39c3bfb0061d2bab9692cce423dd4e029c543d6cb165fad2d86ab2\n\nThis verification link expires in 24 hours.\n\nDogoFlow', 'sent', 1, '2026-10-13 22:57:31', '2026-10-13 22:57:31', NULL),
-(32, 15, 'email', 'Verify your DogoFlow account', 'Hello Customer,\n\nPlease verify your DogoFlow account using this link:\nhttps://www.dogoflow.com/auth/verify.php?token=ab2131b5f3be1a1056b319987fee3843f1090b8648073e3563b457d338608e97\n\nThis verification link expires in 24 hours.\n\nDogoFlow', 'sent', 1, '2026-10-14 04:31:04', '2026-10-14 04:31:04', NULL),
-(35, 17, 'email', 'Verify your DogoFlow account', 'Hello Cimon,\n\nPlease verify your DogoFlow account using this link:\nhttps://www.dogoflow.com/auth/verify.php?token=4ba01254deed0f5e93799f14b386384468ea95123a1e7d88a3c30fa14e99fa7a\n\nThis verification link expires in 24 hours.\n\nDogoFlow', 'sent', 1, '2026-10-15 18:33:09', '2026-10-15 18:33:09', '2026-10-15 18:38:08');
 
 -- --------------------------------------------------------
 
@@ -394,11 +378,6 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `seller_id`, `name`, `slug`, `description`, `price`, `stock`, `image`, `status`, `created_at`, `updated_at`) VALUES
-(9, 13, 'Adidas Campus', 'adidas-campus', 'Size 38-45 available\r\nAvailable in different colours', 350.00, 8, 'uploads/products/7a9ca1963751e37e5f5327663bfc7776.jpg', 'active', '2026-10-13 22:43:29', '2026-10-13 22:53:28'),
-(10, 14, 'AF1', 'af1', NULL, 300.00, 20, 'uploads/products/f5cfb22346233b70a2099eea43a29087.jpg', 'active', '2026-10-13 23:07:13', '2026-10-16 02:56:25'),
-(11, 11, 'Shirt', 'shirt-2', 'Adade3', 100.00, 300, 'uploads/products/ec52c81f2e4f39f7d6b04b14e5e71120.png', 'active', '2026-10-14 05:58:14', '2026-10-16 08:57:27'),
-(12, 13, 'Shoes', 'shoes', NULL, 350.00, 20, 'uploads/products/13292fb8a67ffda93b3aa8c95bafea14.jpg', 'active', '2026-10-14 07:45:11', '2026-10-14 07:49:43'),
-(13, 14, 'Jordan 4', 'jordan-4', 'Quality Pink J4', 350.00, 15, 'uploads/products/dd128f7196350a06fef1abb580eae8fa.jpg', 'active', '2026-10-16 02:56:03', '2026-10-16 02:56:03');
 
 -- --------------------------------------------------------
 
@@ -443,21 +422,7 @@ CREATE TABLE `product_images` (
 --
 
 INSERT INTO `product_images` (`id`, `product_id`, `image_path`, `is_primary`, `sort_order`, `created_at`) VALUES
-(11, 9, 'uploads/products/7e878d50ac35deb5d6f0d6173179860d.jpg', 0, 1, '2026-10-13 22:43:29'),
-(12, 9, 'uploads/products/7a9ca1963751e37e5f5327663bfc7776.jpg', 1, 0, '2026-10-13 22:43:29'),
-(13, 9, 'uploads/products/d86c44b613b143aadb665604886280ca.jpg', 0, 2, '2026-10-13 22:43:29'),
-(14, 10, 'uploads/products/f5cfb22346233b70a2099eea43a29087.jpg', 1, 0, '2026-10-13 23:07:13'),
-(15, 11, 'uploads/products/22687c40759cd9390ec0f351c6cdf727.png', 0, 1, '2026-10-14 05:58:14'),
-(16, 11, 'uploads/products/1a53fcce18a9d5de26500fbbb3f8d9cc.png', 0, 2, '2026-10-14 05:58:14'),
-(17, 11, 'uploads/products/ec52c81f2e4f39f7d6b04b14e5e71120.png', 1, 0, '2026-10-14 05:58:14'),
-(18, 11, 'uploads/products/63067bfe761263750794f071c008737f.png', 0, 3, '2026-10-14 05:58:14'),
-(19, 11, 'uploads/products/b4e6fe5e54b26876c0db13b582c0e4ce.png', 0, 4, '2026-10-14 05:58:14'),
-(20, 12, 'uploads/products/13292fb8a67ffda93b3aa8c95bafea14.jpg', 1, 0, '2026-10-14 07:45:11'),
-(21, 12, 'uploads/products/2e739bb485470be9286d682c75f18c7e.jpg', 0, 1, '2026-10-14 07:45:11'),
-(22, 12, 'uploads/products/86599d7cc7770c9978b79da353f4fef6.jpg', 0, 2, '2026-10-14 07:45:11'),
-(23, 12, 'uploads/products/65e2a628b51eef6cee4c8d6f18e71965.jpg', 0, 3, '2026-10-14 07:45:11'),
-(24, 12, 'uploads/products/52def40bc6affa38e4e5e32cec66da74.jpg', 0, 4, '2026-10-14 07:45:11'),
-(25, 13, 'uploads/products/dd128f7196350a06fef1abb580eae8fa.jpg', 1, 0, '2026-10-16 02:56:03');
+
 
 -- --------------------------------------------------------
 
@@ -546,10 +511,6 @@ CREATE TABLE `seller_subscription_payments` (
 --
 
 INSERT INTO `seller_subscription_payments` (`id`, `user_id`, `reference`, `access_code`, `amount`, `currency`, `gateway`, `status`, `gateway_transaction_id`, `gateway_response`, `verified_at`, `created_at`) VALUES
-(15, 11, 'DFPRO-11-8925043622356012', '1jd2380czg4fyhl', 30.00, 'GHS', 'paystack', 'success', 6653964433, '{\"id\":6653964433,\"domain\":\"test\",\"status\":\"success\",\"reference\":\"DFPRO-11-8925043622356012\",\"receipt_number\":\"10101\",\"amount\":3000,\"message\":null,\"gateway_response\":\"Approved\",\"paid_at\":\"2026-10-13T13:37:54.000Z\",\"created_at\":\"2026-10-13T13:37:45.000Z\",\"channel\":\"mobile_money\",\"currency\":\"GHS\",\"ip_address\":\"154.161.68.48\",\"metadata\":{\"purpose\":\"seller_pro_subscription\",\"user_id\":\"11\",\"plan\":\"pro\",\"referrer\":\"https://www.dogoflow.com/\"},\"log\":{\"start_time\":1791898669,\"time_spent\":4,\"attempts\":1,\"errors\":0,\"success\":false,\"mobile\":true,\"input\":[],\"history\":[{\"type\":\"action\",\"message\":\"Set payment method to: mobile_money\",\"time\":2},{\"type\":\"action\",\"message\":\"Attempted to pay with mobile money\",\"time\":4}]},\"fees\":59,\"fees_split\":null,\"authorization\":{\"authorization_code\":\"AUTH_zj7n7ivbub\",\"bin\":\"055XXX\",\"last4\":\"X987\",\"exp_month\":\"12\",\"exp_year\":\"9999\",\"channel\":\"mobile_money\",\"card_type\":\"\",\"bank\":\"MTN\",\"country_code\":\"GH\",\"brand\":\"Mtn\",\"reusable\":false,\"signature\":null,\"account_name\":null,\"mobile_money_number\":\"0551234987\",\"receiver_bank_account_number\":null,\"receiver_bank\":null},\"customer\":{\"id\":390482963,\"first_name\":null,\"last_name\":null,\"email\":\"professorsimon622@gmail.com\",\"customer_code\":\"CUS_a1mrvgpzmwgni2c\",\"phone\":null,\"metadata\":null,\"risk_action\":\"default\",\"international_format_phone\":null},\"plan\":null,\"split\":[],\"order_id\":null,\"paidAt\":\"2026-10-13T13:37:54.000Z\",\"createdAt\":\"2026-10-13T13:37:45.000Z\",\"requested_amount\":3000,\"pos_transaction_data\":null,\"source\":null,\"fees_breakdown\":null,\"connect\":null,\"transaction_date\":\"2026-10-13T13:37:45.000Z\",\"plan_object\":[],\"subaccount\":[]}', '2026-10-13 13:37:59', '2026-10-13 13:37:44'),
-(16, 12, 'DFPRO-12-451221914FFD868E', 'm54sfx2lwb107l7', 30.00, 'GHS', 'paystack', 'success', 6653981962, '{\"id\":6653981962,\"domain\":\"test\",\"status\":\"success\",\"reference\":\"DFPRO-12-451221914FFD868E\",\"receipt_number\":\"10101\",\"amount\":3000,\"message\":null,\"gateway_response\":\"Approved\",\"paid_at\":\"2026-10-13T13:44:47.000Z\",\"created_at\":\"2026-10-13T13:44:29.000Z\",\"channel\":\"mobile_money\",\"currency\":\"GHS\",\"ip_address\":\"154.161.68.48\",\"metadata\":{\"purpose\":\"seller_pro_subscription\",\"user_id\":\"12\",\"plan\":\"pro\",\"referrer\":\"https://www.dogoflow.com/\"},\"log\":{\"start_time\":1791899073,\"time_spent\":13,\"attempts\":1,\"errors\":0,\"success\":false,\"mobile\":true,\"input\":[],\"history\":[{\"type\":\"action\",\"message\":\"Set payment method to: mobile_money\",\"time\":12},{\"type\":\"action\",\"message\":\"Attempted to pay with mobile money\",\"time\":13}]},\"fees\":59,\"fees_split\":null,\"authorization\":{\"authorization_code\":\"AUTH_ckzh9pj5xo\",\"bin\":\"055XXX\",\"last4\":\"X987\",\"exp_month\":\"12\",\"exp_year\":\"9999\",\"channel\":\"mobile_money\",\"card_type\":\"\",\"bank\":\"MTN\",\"country_code\":\"GH\",\"brand\":\"Mtn\",\"reusable\":false,\"signature\":null,\"account_name\":null,\"mobile_money_number\":\"0551234987\",\"receiver_bank_account_number\":null,\"receiver_bank\":null},\"customer\":{\"id\":393184489,\"first_name\":null,\"last_name\":null,\"email\":\"webyatey@gmail.com\",\"customer_code\":\"CUS_w4pyqd205q7plt9\",\"phone\":null,\"metadata\":null,\"risk_action\":\"default\",\"international_format_phone\":null},\"plan\":null,\"split\":[],\"order_id\":null,\"paidAt\":\"2026-10-13T13:44:47.000Z\",\"createdAt\":\"2026-10-13T13:44:29.000Z\",\"requested_amount\":3000,\"pos_transaction_data\":null,\"source\":null,\"fees_breakdown\":null,\"connect\":null,\"transaction_date\":\"2026-10-13T13:44:29.000Z\",\"plan_object\":[],\"subaccount\":[]}', '2026-10-13 13:44:51', '2026-10-13 13:44:29'),
-(17, 13, 'DFPRO-13-57256E980917EA28', '6j9vlpykvy29vlb', 30.00, 'GHS', 'paystack', 'success', 6655424720, '{\"id\":6655424720,\"domain\":\"test\",\"status\":\"success\",\"reference\":\"DFPRO-13-57256E980917EA28\",\"receipt_number\":\"10101\",\"amount\":3000,\"message\":null,\"gateway_response\":\"Approved\",\"paid_at\":\"2026-10-13T22:24:42.000Z\",\"created_at\":\"2026-10-13T22:24:23.000Z\",\"channel\":\"mobile_money\",\"currency\":\"GHS\",\"ip_address\":\"154.161.77.210\",\"metadata\":{\"purpose\":\"seller_pro_subscription\",\"user_id\":\"13\",\"plan\":\"pro\",\"referrer\":\"https://www.dogoflow.com/\"},\"log\":{\"start_time\":1791930267,\"time_spent\":15,\"attempts\":1,\"errors\":0,\"success\":false,\"mobile\":false,\"input\":[],\"history\":[{\"type\":\"action\",\"message\":\"Attempted to pay with mobile money\",\"time\":15}]},\"fees\":59,\"fees_split\":null,\"authorization\":{\"authorization_code\":\"AUTH_f5rvupp3kz\",\"bin\":\"055XXX\",\"last4\":\"X987\",\"exp_month\":\"12\",\"exp_year\":\"9999\",\"channel\":\"mobile_money\",\"card_type\":\"\",\"bank\":\"MTN\",\"country_code\":\"GH\",\"brand\":\"Mtn\",\"reusable\":false,\"signature\":null,\"account_name\":null,\"mobile_money_number\":\"0551234987\",\"receiver_bank_account_number\":null,\"receiver_bank\":null},\"customer\":{\"id\":408420380,\"first_name\":null,\"last_name\":null,\"email\":\"yfwdeon006@gmail.com\",\"customer_code\":\"CUS_11diu7apawqo2fu\",\"phone\":null,\"metadata\":null,\"risk_action\":\"default\",\"international_format_phone\":null},\"plan\":null,\"split\":[],\"order_id\":null,\"paidAt\":\"2026-10-13T22:24:42.000Z\",\"createdAt\":\"2026-10-13T22:24:23.000Z\",\"requested_amount\":3000,\"pos_transaction_data\":null,\"source\":null,\"fees_breakdown\":null,\"connect\":null,\"transaction_date\":\"2026-10-13T22:24:23.000Z\",\"plan_object\":[],\"subaccount\":[]}', '2026-10-13 22:24:51', '2026-10-13 22:24:23'),
-(18, 14, 'DFPRO-14-BF08B6A7374F8320', 'u7wyc9husxmtmvk', 30.00, 'GHS', 'paystack', 'success', 6655456521, '{\"id\":6655456521,\"domain\":\"test\",\"status\":\"success\",\"reference\":\"DFPRO-14-BF08B6A7374F8320\",\"receipt_number\":\"10101\",\"amount\":3000,\"message\":null,\"gateway_response\":\"Approved\",\"paid_at\":\"2026-10-13T22:59:26.000Z\",\"created_at\":\"2026-10-13T22:59:04.000Z\",\"channel\":\"mobile_money\",\"currency\":\"GHS\",\"ip_address\":\"154.162.86.93\",\"metadata\":{\"purpose\":\"seller_pro_subscription\",\"user_id\":\"14\",\"plan\":\"pro\",\"referrer\":\"https://www.dogoflow.com/\"},\"log\":{\"start_time\":1791932350,\"time_spent\":16,\"attempts\":1,\"errors\":0,\"success\":false,\"mobile\":true,\"input\":[],\"history\":[{\"type\":\"action\",\"message\":\"Set payment method to: mobile_money\",\"time\":13},{\"type\":\"action\",\"message\":\"Attempted to pay with mobile money\",\"time\":16}]},\"fees\":59,\"fees_split\":null,\"authorization\":{\"authorization_code\":\"AUTH_cncr9hou7c\",\"bin\":\"055XXX\",\"last4\":\"X987\",\"exp_month\":\"12\",\"exp_year\":\"9999\",\"channel\":\"mobile_money\",\"card_type\":\"\",\"bank\":\"MTN\",\"country_code\":\"GH\",\"brand\":\"Mtn\",\"reusable\":false,\"signature\":null,\"account_name\":null,\"mobile_money_number\":\"0551234987\",\"receiver_bank_account_number\":null,\"receiver_bank\":null},\"customer\":{\"id\":408425067,\"first_name\":null,\"last_name\":null,\"email\":\"konadufelix916@gmail.com\",\"customer_code\":\"CUS_o05nx0gh7smwwtj\",\"phone\":null,\"metadata\":null,\"risk_action\":\"default\",\"international_format_phone\":null},\"plan\":null,\"split\":[],\"order_id\":null,\"paidAt\":\"2026-10-13T22:59:26.000Z\",\"createdAt\":\"2026-10-13T22:59:04.000Z\",\"requested_amount\":3000,\"pos_transaction_data\":null,\"source\":null,\"fees_breakdown\":null,\"connect\":null,\"transaction_date\":\"2026-10-13T22:59:04.000Z\",\"plan_object\":[],\"subaccount\":[]}', '2026-10-13 22:59:35', '2026-10-13 22:59:03');
 
 -- --------------------------------------------------------
 
@@ -597,14 +558,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password_hash`, `role`, `status`, `email_verified_at`, `created_at`, `updated_at`) VALUES
-(1, 'DogoFlow Administrator', 'admin@dogoflow.com', NULL, '$2y$10$7Y7wfcdNsOtJinY7FZJM1.m4dFs2w70.866tIKhoA0vdBsDG2qffS', 'admin', 'active', '2026-09-28 15:14:07', '2026-09-28 15:14:07', '2026-09-28 15:14:07'),
-(3, 'AFFTEST', 'affliate@gmail.com', '0240000000', '$2y$10$ECOC4zyxN8NT7Pm6AFwF7uamqkvh1QB7fFgmezhq5DXEtpI9uZfEy', 'affiliate', 'active', '2026-09-29 12:02:33', '2026-09-29 12:02:28', '2026-09-29 12:02:33'),
-(11, 'Simon Abayeteye', 'professorsimon622@gmail.com', '+233273406734', '$2y$10$lhE91.MeOsjf7jKiCIWMaO1mZGjzWQyjiO1EMmON0oLg/1Jj1u7ci', 'seller', 'active', '2026-10-13 13:35:06', '2026-10-13 13:34:31', '2026-10-13 13:35:06'),
-(12, 'Prof Simon', 'webyatey@gmail.com', '+233273406734', '$2y$10$EjYj/xqYBGnJmdj7n6QWfukgMb8VsKPciQ63aAjC.FiFxOB0O7v1S', 'seller', 'active', '2026-10-13 13:43:18', '2026-10-13 13:42:40', '2026-10-13 16:02:11'),
-(13, 'Gideon Adjei', 'yfwdeon006@gmail.com', '053 640 9030', '$2y$10$zaHJ5LJ2T./py4Xo.d4MA.6TsrK6kORmDkF9IybRobAPm6x/DpUU6', 'seller', 'active', '2026-10-13 22:22:17', '2026-10-13 22:20:00', '2026-10-13 22:23:16'),
-(14, 'Felix  Konadu', 'konadufelix916@gmail.com', '0594782488', '$2y$10$NkbhJi039MJAi0g95fzi9OFeXixZid7a//6chIku/GUsq0UmLllHG', 'seller', 'active', '2026-10-13 22:58:09', '2026-10-13 22:57:31', '2026-10-13 22:58:09'),
-(15, 'Customer', 'profcimon@icloud.com', '0558206490', '$2y$10$5DH6H3TdQx0KLGLy/VSRkekH/FlreKwJ2xksJDMsJDEM2WV6JpUhO', 'customer', 'active', '2026-10-14 05:31:22', '2026-10-14 04:31:04', '2026-10-14 05:31:22'),
-(17, 'Cimon', 'abayateyesimon799@gmail.com', NULL, '$2y$10$igTHKuC7jPj6/./jm.IuGuHSIPrh3rdOFuXgJ/tQqpf2pI9SAybXu', 'customer', 'active', '2026-10-15 18:34:14', '2026-10-15 18:33:09', '2026-10-15 18:34:14');
 
 -- --------------------------------------------------------
 
